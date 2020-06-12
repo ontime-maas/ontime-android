@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/content"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_barun_gothic_bold"
+            android:text="STEP 4"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp"
+            android:textColor="#348eff" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_barun_gothic_bold"
+            android:text="준비시간이"
+            android:layout_marginStart="50dp"
+            android:textSize="25dp"
+            android:textColor="#f000" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_barun_gothic_light"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="40dp"
+            android:text="얼마나 걸리시나요?"
+            android:layout_marginStart="50dp"
+            android:textSize="25dp"
+            android:textColor="#f000" />
+
+
+    </LinearLayout>
+    <FrameLayout
+
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <NumberPicker
+    android:id="@+id/set_readytime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_barun_gothic_bold"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="120dp"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:text="분"/>
+
+    </FrameLayout>
+
+            <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+                <!--android:layout_marginTop="80dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:fontFamily="@font/nanum_barun_gothic"-->
+                <!--android:text="출발 전까지"-->
+                <!--android:layout_marginStart="50dp"-->
+                <!--android:textSize="25dp"-->
+                <!--android:textColor="#f000" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="50dp"-->
+                <!--android:fontFamily="@font/nanum_barun_gothic"-->
+                <!--android:text="준비 시간이 얼마나"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:textSize="25dp"-->
+                <!--android:textColor="#f000" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="50dp"-->
+                <!--android:fontFamily="@font/nanum_barun_gothic"-->
+                <!--android:text="걸리나요?"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:textSize="25dp"-->
+                <!--android:textColor="#f000" />-->
+
+
+            <!--<ImageView-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="300dp"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:src="@drawable/turn"/>-->
+
+        <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<EditText-->
+            <!--android:layout_gravity="right"-->
+            <!--android:layout_marginRight="50dp"-->
+            <!--android:inputType="number"-->
+            <!--android:hint="&#160;&#160;&#160;&#160;&#160;&#160;(분)"-->
+            <!--android:text=""-->
+            <!--android:id="@+id/edit_readytime"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+        <com.ornach.nobobutton.NoboButton
+            android:id="@+id/btn_setReadyTime"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/nanum_barun_gothic_light"
+            android:layout_width="350dp"
+            android:layout_height="63dp"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            app:nb_text="설정완료"
+            app:nb_textSize="20dp"
+            app:nb_borderColor="#FFFFFF"
+            app:nb_borderWidth="2dp"
+            app:nb_backgroundColor="#EF3D56"
+            app:nb_focusColor="#B83CC3"
+            app:nb_textColor="#FFF"
+            app:nb_radius="32dp" />
+
+
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>
+    </RelativeLayout>

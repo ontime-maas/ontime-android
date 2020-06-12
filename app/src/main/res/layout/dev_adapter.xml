@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/item_border"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="출발"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/border_color">
+
+        </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/nanum_barun_gothic_light"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:text="07:05"/>
+
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/main_toggle"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp" />
+
+
+    </LinearLayout>

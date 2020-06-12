@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_marginTop="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanum_barun_gothic"
+                android:text="몇 시까지"
+                android:layout_marginStart="50dp"
+                android:textSize="25dp"
+                android:textColor="#f000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:fontFamily="@font/nanum_barun_gothic"
+                android:text="도착해야 하나요?"
+                android:layout_marginTop="5dp"
+                android:textSize="25dp"
+                android:textColor="#f000" />
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/end"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:fontFamily="@font/nanum_barun_gothic"-->
+                <!--android:layout_marginStart="50dp"-->
+                <!--android:text="예상 소요시간"-->
+                <!--android:textColor="#f000"-->
+                <!--android:textSize="25dp" />-->
+
+            <!--<Spinner-->
+                <!--android:id="@+id/select_time"-->
+                <!--android:layout_marginStart="20dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="wrap_content"/>-->
+
+        <!--</LinearLayout>-->
+
+        <com.ornach.nobobutton.NoboButton
+            android:id="@+id/btn_setArTime"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/nanum_barun_gothic_light"
+            android:layout_width="350dp"
+            android:layout_height="63dp"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            app:nb_text="도착 시간 정하기"
+            app:nb_textSize="20dp"
+            app:nb_borderColor="#FFFFFF"
+            app:nb_borderWidth="2dp"
+            app:nb_backgroundColor="#EF3D56"
+            app:nb_focusColor="#B83CC3"
+            app:nb_textColor="#FFF"
+            app:nb_radius="32dp" />
+
+
+        <LinearLayout
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_arampm"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanum_barun_gothic"
+                android:text=""
+                android:textColor="#f000"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/txt_arhour"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanum_barun_gothic"
+                android:text=""
+                android:textColor="#f000"
+                android:textSize="25dp" />
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanum_barun_gothic"
+                android:text="시"
+                android:textColor="#f000"
+                android:textSize="25dp" />
+
+
+            <TextView
+                android:id="@+id/txt_armin"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanum_barun_gothic"
+                android:text=""
+                android:textColor="#f000"
+                android:textSize="25dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/nanum_barun_gothic"
+                android:text="분"
+                android:textColor="#f000"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:orientation="vertical"
+            android:gravity="right">
+
+            <TextView
+               android:layout_marginTop="10dp"
+                android:layout_marginEnd="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanum_barun_gothic"
+                android:text="까지 도착!"
+                android:textColor="#f000"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

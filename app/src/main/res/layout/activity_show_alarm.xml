@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="100dp"
+            android:id="@+id/now_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="100dp"
+            android:fontFamily="@font/nanum_barun_gothic_bold"
+            android:text="6:55"/>
+
+        <TextView
+            android:id="@+id/now_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="7월 4일 목요일"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="@font/nanum_barun_gothic_light"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/now_last_time"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#dd3350"
+            android:fontFamily="@font/nanum_barun_gothic"
+            android:layout_marginTop="10dp"
+            android:textSize="30dp"
+            android:text="10분 전"/>
+
+        <TextView
+            android:id="@+id/now_last_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nanum_barun_gothic"
+            android:text="출발까지 10분 남았습니다."/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/now_last_busstop"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="20dp"-->
+            <!--android:layout_marginTop="10dp"-->
+
+            <!--android:fontFamily="@font/nanum_barun_gothic"-->
+            <!--android:text="8정거장 남았습니다."-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="20dp" />-->
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/nanum_barun_gothic_light"
+            android:textSize="20dp"
+            android:text="Snooze"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.ornach.nobobutton.NoboButton
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:id="@+id/now_three"
+                android:fontFamily="@font/nanum_barun_gothic_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                app:nb_text="+3분"
+                app:nb_textSize="20dp"
+                app:nb_borderWidth="2dp"
+                app:nb_backgroundColor="@color/white"
+                app:nb_focusColor="#B83CC3"
+                app:nb_textColor="@color/black"
+                app:nb_radius="32dp" />
+
+
+            <com.ornach.nobobutton.NoboButton
+                android:layout_gravity="center"
+                android:id="@+id/now_five"
+                android:fontFamily="@font/nanum_barun_gothic_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:padding="20dp"
+                app:nb_text="+5분"
+                app:nb_textSize="20dp"
+                app:nb_borderWidth="2dp"
+                app:nb_backgroundColor="@color/white"
+                app:nb_focusColor="#B83CC3"
+                app:nb_textColor="@color/black"
+                app:nb_radius="32dp" />
+
+
+            <com.ornach.nobobutton.NoboButton
+                android:layout_gravity="center"
+                android:id="@+id/now_ten"
+                android:fontFamily="@font/nanum_barun_gothic_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+
+                android:padding="20dp"
+                app:nb_text="+10분"
+                app:nb_textSize="20dp"
+                app:nb_borderWidth="2dp"
+                app:nb_backgroundColor="@color/white"
+                app:nb_focusColor="#B83CC3"
+                app:nb_textColor="@color/black"
+                app:nb_radius="32dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.ornach.nobobutton.NoboButton
+            android:layout_gravity="center"
+            android:id="@+id/alarm_kill"
+            android:fontFamily="@font/nanum_barun_gothic_light"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:nb_text="알람 끄기"
+            app:nb_textSize="20dp"
+            app:nb_borderWidth="2dp"
+            app:nb_backgroundColor="#EF3D56"
+            app:nb_focusColor="#B83CC3"
+            app:nb_textColor="#FFF"
+            app:nb_radius="32dp" />
+
+    </LinearLayout>
+</LinearLayout>

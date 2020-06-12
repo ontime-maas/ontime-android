@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.izen1231.ontime">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="n">
+        <activity android:name=".fragment.FourFragment"/>
+        <activity android:name=".fragment.ThreeFragment" />
+        <activity android:name=".fragment.TwoFragment" />
+        <activity android:name=".fragment.OneFragment" />
+        <activity android:name="fragment.OneAlarmingFragment" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".receiver.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".service.AlarmService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.InputActivity" />
+        <activity android:name=".activity.Input2Activity" />
+        <activity android:name=".activity.Input3Activity" />
+        <activity android:name=".activity.Input4Activity" />
+        <activity android:name=".activity.Input5Activity" />
+        <activity android:name=".activity.Input6Activity" />
+        <activity android:name=".activity.ViewPagerActivity" />
+        <activity android:name=".activity.AlarmMainActivity" />
+        <activity android:name=".activity.AddAlarmActivity" />
+        <activity android:name=".example.Example01Activity"/>
+        <activity android:name=".activity.ShowAlarm"/>
+        <activity android:name=".activity.AlarmAdmin"/>
+        <activity android:name=".activity.AlarmListActivity"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_barun_gothic_bold"
+            android:text="STEP 1"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp"
+            android:textColor="#348eff" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_barun_gothic_bold"
+            android:text="출발지와"
+            android:layout_marginStart="50dp"
+            android:textSize="25dp"
+            android:textColor="#f000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:fontFamily="@font/nanum_barun_gothic_bold"
+            android:text="목적지는"
+            android:layout_marginTop="5dp"
+            android:textSize="25dp"
+            android:textColor="#f000" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_barun_gothic_light"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="40dp"
+            android:text="어디인가요?"
+            android:layout_marginStart="50dp"
+            android:textSize="25dp"
+            android:textColor="#f000" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanum_barun_gothic"
+                android:layout_marginStart="50dp"
+                android:text="출발지"
+                android:textColor="#404040"
+                android:textSize="25dp" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/input_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border"
+                    android:padding="5dp"
+                    android:text="&#160;&#160;서울 강남구 봉은사로 150"
+                    android:textColor="#BDBDBD"
+                    android:textSize="20dp" />
+
+            <ImageView
+                android:layout_gravity="center|right"
+                android:layout_marginEnd="60dp"
+                android:src="@drawable/ic_search_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <TextView
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanum_barun_gothic"
+                android:text="도착지"
+                android:textColor="#404040"
+                android:textSize="25dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <EditText
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"
+                android:id="@+id/input_end"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:textColor="#BDBDBD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="&#160;&#160;서울 강남구 테헤란로 156"/>
+
+            <ImageView
+                android:layout_gravity="center|right"
+                android:layout_marginEnd="60dp"
+                android:src="@drawable/ic_search_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/taminsubwayy"/>
+
+        </LinearLayout>
+
+        <com.ornach.nobobutton.NoboButton
+            android:layout_gravity="center"
+            android:id="@+id/btn_second_next"
+            android:fontFamily="@font/nanum_barun_gothic_light"
+            android:layout_width="350dp"
+            android:layout_height="63dp"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            app:nb_text="장소 설정 완료"
+            app:nb_textSize="20dp"
+            app:nb_borderColor="#FFFFFF"
+            app:nb_borderWidth="2dp"
+            app:nb_backgroundColor="#EF3D56"
+            app:nb_focusColor="#B83CC3"
+            app:nb_textColor="#FFF"
+            app:nb_radius="32dp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
